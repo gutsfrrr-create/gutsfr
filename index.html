@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080808">
+  <meta name="description" content="GUTS — dark pen art, graphite studies, and drawings born from feeling.">
+  <title>GUTS — Dark Art Archive</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/jpeg" href="images/guts-artist-emblem.jpg">
+  <link rel="apple-touch-icon" href="images/guts-artist-emblem.jpg">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="intro-screen" id="introScreen" aria-hidden="true"><div class="intro-sigil"><img src="images/guts-artist-emblem.jpg" alt=""><span>GUTS</span><small>ENTER THE DARK ARCHIVE</small><i></i></div></div>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="wordmark" href="#home" aria-label="GUTS home"><img src="images/guts-artist-emblem.jpg" alt="" class="brand-logo"><span class="brand-name">GUTS<sup>®</sup></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav id="navMenu">
+      <a href="#gallery">ARTWORK</a>
+      <a href="#about">THE ARTIST</a>
+      <a href="#contact">CONTACT</a>
+      <a class="insta-link" href="https://www.instagram.com/guts.7r/" target="_blank" rel="noreferrer">INSTAGRAM ↗</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <p class="kicker"><span class="red-line"></span> DARK PEN ARTIST / INDEPENDENT ART</p>
+        <h1>Some feelings<br>are better <em>drawn.</em></h1>
+        <p class="hero-text">I draw whatever I feel. Dark worlds, raw lines, characters, shadows — no rules, just instinct.</p>
+        <div class="hero-actions">
+          <a class="button button-light" href="#gallery">ENTER THE ARCHIVE <span>↘</span></a>
+          <a class="text-button" href="https://www.instagram.com/guts.7r/" target="_blank" rel="noreferrer">@guts.7r ↗</a>
+        </div>
+        <div class="hero-meta"><span>INK / GRAPHITE / FEELING</span><span>NO FIXED GENRE</span></div>
+      </div>
+      <div class="hero-art reveal">
+        <div class="hero-frame">
+          <img src="images/castle-knight-original.jpg" alt="Intricate ink drawing of a dark knight in front of a castle">
+          <div class="frame-caption"><span>FIG. 001</span><span>CASTLE OF SHADOWS</span></div>
+        </div>
+        <span class="side-note">DRAWN IN DARKNESS — MADE BY HAND</span>
+        <span class="crosshair crosshair-a">✳</span>
+        <span class="crosshair crosshair-b">✳</span>
+      </div>
+      <div class="hero-bottom"><span>SCROLL TO EXPLORE</span><span class="scroll-line"></span><span>01 — 03</span></div>
+    </section>
+
+    <section class="gallery-section" id="gallery">
+      <div class="section-head reveal">
+        <div><p class="kicker"><span class="red-line"></span> SELECTED WORKS</p><h2>The <em>Archive</em></h2></div>
+        <p>Character fan art, original sketches, and studies.<br>Each piece has its own story and source.</p>
+      </div>
+      <div class="filter-row reveal" aria-label="Filter artwork">
+        <button class="filter active" data-filter="all">ALL WORKS <span>21</span></button>
+        <button class="filter" data-filter="ink">INK & PEN</button>
+        <button class="filter" data-filter="graphite">GRAPHITE</button>
+        <button class="filter" data-filter="color">COLOR STUDY</button>
+      </div>
+      <div class="art-grid" id="artGrid">
+        <button class="art-card tall" data-category="ink" data-index="0" aria-label="View Berserk Poster Artwork">
+          <img src="images/berserk-collage-original.jpg" alt="Berserk poster-style collage artwork." loading="lazy"><span class="art-overlay"><small>01 / INK & PEN</small><strong>Berserk Poster Artwork</strong><span class="art-source">Berserk · Manga</span><i>↗</i></span>
+        </button>
+        <button class="art-card" data-category="graphite" data-index="1" aria-label="View Vito Corleone">
+          <img src="images/godfather-original.jpg" alt="Graphite portrait of Vito Corleone from The Godfather." loading="lazy"><span class="art-overlay"><small>02 / GRAPHITE</small><strong>Vito Corleone</strong><span class="art-source">The Godfather · Film</span><i>↗</i></span>
+        </button>
+        <button class="art-card" data-category="ink" data-index="2" aria-label="View Thorfinn">
+          <img src="images/manga-warrior-original.jpg" alt="Character artwork identified as Thorfinn from Vinland Saga." loading="lazy"><span class="art-overlay"><small>03 / INK & PEN</small><strong>Thorfinn</strong><span class="art-source">Vinland Saga · Anime/Manga</span><i>↗</i></span>
+        </button>
+        <button class="art-card" data-category="graphite" data-index="3" aria-label="View Ryomen Sukuna">
+          <img src="images/guts-portrait-original.jpg" alt="Portrait artwork of Ryomen Sukuna from Jujutsu Kaisen." loading="lazy"><span class="art-overlay"><small>04 / GRAPHITE</small><strong>Ryomen Sukuna</strong><span class="art-source">Jujutsu Kaisen · Anime/Manga</span><i>↗</i></span>
+        </button>
+        <button class="art-card wide" data-category="graphite" data-index="4" aria-label="View Kokushibo">
+          <img src="images/dark-fantasy-face-original.webp" alt="Marked fantasy portrait of Kokushibo." loading="lazy"><span class="art-overlay"><small>05 / GRAPHITE</small><strong>Kokushibo</strong><span class="art-source">Demon Slayer: Kimetsu no Yaiba · Anime/Manga</span><i>↗</i></span>
+        </button>
+        <button class="art-card" data-category="graphite" data-index="5" aria-label="View Do Ha-na">
+          <img src="images/portrait-study-original.jpg" alt="Portrait study of Do Ha-na from The Uncanny Counter." loading="lazy"><span class="art-overlay"><small>06 / GRAPHITE</small><strong>Do Ha-na</strong><span class="art-source">The Uncanny Counter · Korean TV series</span><i>↗</i></span>
+        </button>
+        <button class="art-card" data-category="graphite" data-index="6" aria-label="View Lucifer">
+          <img src="images/horned-demon-original.jpg" alt="Horned Lucifer character illustration." loading="lazy"><span class="art-overlay"><small>07 / GRAPHITE</small><strong>Lucifer</strong><span class="art-source">Dark Fantasy · Character artwork</span><i>↗</i></span>
+        </button>
+        <button class="art-card tall" data-category="ink" data-index="7" aria-label="View The Last Keep — Knight and Castle">
+          <img src="images/castle-knight-original.jpg" alt="Knight and castle drawing." loading="lazy"><span class="art-overlay"><small>08 / INK & PEN</small><strong>The Last Keep — Knight and Castle</strong><span class="art-source">Original dark-fantasy artwork</span><i>↗</i></span>
+        </button>
+        <button class="art-card" data-category="ink" data-index="8" aria-label="View Hisoka Morow">
+          <img src="images/hisoka-original.jpg" alt="Hisoka Morow fan art from Hunter × Hunter." loading="lazy"><span class="art-overlay"><small>09 / INK & PEN</small><strong>Hisoka Morow</strong><span class="art-source">Hunter × Hunter · Anime/Manga</span><i>↗</i></span>
+        </button>
+        <button class="art-card" data-category="graphite" data-index="9" aria-label="View Girl Sketch">
+          <img src="images/blonde-portrait-original.jpg" alt="Blonde girl portrait sketch." loading="lazy"><span class="art-overlay"><small>10 / GRAPHITE</small><strong>Girl Sketch</strong><span class="art-source">Original portrait study</span><i>↗</i></span>
+        </button>
+        <button class="art-card wide" data-category="ink" data-index="10" aria-label="View Guts — Clash of Blades">
+          <img src="images/berserk-poster-artwork.png" alt="Dramatic Guts clash artwork from Berserk." loading="lazy"><span class="art-overlay"><small>11 / INK & PEN</small><strong>Guts — Clash of Blades</strong><span class="art-source">Berserk · Manga</span><i>↗</i></span>
+        </button>
+        <button class="art-card" data-category="graphite" data-index="11" aria-label="View Anime Character Studies">
+          <img src="images/anime-character-studies.jpg" alt="A monochrome sketch page with multiple anime character studies." loading="lazy"><span class="art-overlay"><small>12 / GRAPHITE</small><strong>Anime Character Studies</strong><span class="art-source">Anime fan art · Multiple characters</span><i>↗</i></span>
+        </button>
+        <button class="art-card" data-category="color" data-index="12" aria-label="View Yellow Sports Car">
+          <img src="images/yellow-sports-car-study.jpeg" alt="Hand-drawn yellow sports car illustration." loading="lazy"><span class="art-overlay"><small>13 / COLOR STUDY</small><strong>Yellow Sports Car</strong><span class="art-source">Automotive illustration · Original study</span><i>↗</i></span>
+        </button>
+        <button class="art-card tall" data-category="graphite" data-index="13" aria-label="View Messmer the Impaler">
+          <img src="images/dark-knight-portrait.jpeg" alt="Monochrome character portrait of Messmer the Impaler." loading="lazy"><span class="art-overlay"><small>14 / GRAPHITE</small><strong>Messmer the Impaler</strong><span class="art-source">Elden Ring: Shadow of the Erdtree · Video game</span><i>↗</i></span>
+        </button>
+        <button class="art-card" data-category="graphite" data-index="14" aria-label="View Sukuna Pencil Art">
+          <img src="images/guts-head-down.jpeg" alt="Pencil artwork labeled Sukuna Pencil Art." loading="lazy"><span class="art-overlay"><small>15 / GRAPHITE</small><strong>Sukuna Pencil Art</strong><span class="art-source">Jujutsu Kaisen · Anime/Manga</span><i>↗</i></span>
+        </button>
+        <button class="art-card" data-category="graphite" data-index="15" aria-label="View Angel">
+          <img src="images/guts-physique-study.jpg" alt="Charcoal-style muscular character study titled Angel." loading="lazy"><span class="art-overlay"><small>16 / GRAPHITE</small><strong>Angel</strong><span class="art-source">Character artwork · Source unspecified</span><i>↗</i></span>
+        </button>
+        <button class="art-card" data-category="ink" data-index="16" aria-label="View Baraggan Louisenbairn">
+          <img src="images/baraggan-bleach.jpg" alt="Baraggan, the skeletal crowned ruler from Bleach." loading="lazy"><span class="art-overlay"><small>17 / INK & PEN</small><strong>Baraggan Louisenbairn</strong><span class="art-source">Bleach · Anime/Manga</span><i>↗</i></span>
+        </button>
+        <button class="art-card wide" data-category="ink" data-index="17" aria-label="View Pyramid Head">
+          <img src="images/hooded-fantasy-wanderer.jpg" alt="Ink sketch of Pyramid Head from Silent Hill." loading="lazy"><span class="art-overlay"><small>18 / INK & PEN</small><strong>Pyramid Head</strong><span class="art-source">Silent Hill · Video game series</span><i>↗</i></span>
+        </button>
+        <button class="art-card" data-category="graphite" data-index="18" aria-label="View Sung Jinwoo">
+          <img src="images/dark-guts-sketch.jpg" alt="A rough, expressive portrait of Sung Jinwoo from Solo Leveling." loading="lazy"><span class="art-overlay"><small>19 / GRAPHITE</small><strong>Sung Jinwoo</strong><span class="art-source">Solo Leveling · Anime/Manhwa</span><i>↗</i></span>
+        </button>
+        <button class="art-card" data-category="graphite" data-index="19" aria-label="View Toji Fushiguro">
+          <img src="images/guts-sword-study.jpg" alt="Monochrome character sketch of Toji Fushiguro." loading="lazy"><span class="art-overlay"><small>20 / GRAPHITE</small><strong>Toji Fushiguro</strong><span class="art-source">Jujutsu Kaisen · Anime/Manga</span><i>↗</i></span>
+        </button>
+        <button class="art-card" data-category="graphite" data-index="20" aria-label="View Muscular Figure Study">
+          <img src="images/muscular-figure-study.jpg" alt="A high-contrast graphite study of the human form." loading="lazy"><span class="art-overlay"><small>21 / GRAPHITE</small><strong>Muscular Figure Study</strong><span class="art-source">Original figure study</span><i>↗</i></span>
+        </button>
+      </div>
+      <p class="gallery-note">21 pieces across anime, film, dark fantasy, and original studies. Select any artwork to view it larger and explore its source.</p>
+    </section>
+
+    <section class="artist-section" id="about">
+      <div class="artist-image reveal"><img src="images/guts-artist-emblem.jpg" alt="GUTS monochrome Berserk-inspired portrait emblem with glowing GUTS lettering" loading="lazy"><span class="image-stamp">G / 7R</span></div>
+      <div class="artist-copy reveal">
+        <p class="kicker"><span class="red-line"></span> BEHIND THE LINES</p>
+        <h2>Create without chains.<br>Become <em>anything.</em></h2>
+        <p>I'm GUTS — a dark pen artist who draws whatever he feels like drawing. One day it's a brutal fantasy scene, another day a face, a character, or an idea that won't leave my head.</p>
+        <p>I don't want to stay in one genre. I just want every drawing to carry something real: mood, detail, darkness, or a feeling I couldn't explain in words.</p>
+        <div class="artist-signature">GUTS<span>®</span></div>
+        <a class="text-button" href="https://www.instagram.com/guts.7r/" target="_blank" rel="noreferrer">FOLLOW THE PROCESS @GUTS.7R ↗</a>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-inner reveal">
+        <p class="kicker"><span class="red-line"></span> OPEN FOR CONNECTIONS</p>
+        <h2>Let's talk <em>art.</em></h2>
+        <p>For art conversations, collaborations, or just to share what you feel through a drawing.</p>
+        <a class="contact-email" href="mailto:guts.inkk@gmail.com" aria-label="Email GUTS at guts.inkk@gmail.com">guts.inkk@gmail.com <span aria-hidden="true">↗</span></a>
+        <a class="button button-light" href="https://www.instagram.com/guts.7r/" target="_blank" rel="noreferrer">DM ME ON INSTAGRAM ↗</a>
+      </div>
+      <div class="contact-mark" aria-hidden="true">G</div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="wordmark footer-mark" href="#home" aria-label="GUTS home"><img src="images/guts-artist-emblem.jpg" alt="" class="brand-logo"><span class="brand-name">GUTS<sup>®</sup></span></a>
+    <p>DRAW WHAT YOU FEEL. NOTHING ELSE.</p>
+    <a href="https://www.instagram.com/guts.7r/" target="_blank" rel="noreferrer">@GUTS.7R ↗</a>
+    <span>© <span id="year"></span> GUTS</span>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Artwork viewer">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close artwork viewer">×</button>
+    <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous artwork">‹</button>
+    <figure><img id="lightboxImage" src="" alt=""><figcaption><span id="lightboxNumber"></span><strong id="lightboxTitle"></strong></figcaption></figure>
+    <button class="lightbox-next" id="lightboxNext" aria-label="Next artwork">›</button>
+  </div>
+</body>
+</html>
